@@ -1,0 +1,47 @@
+service: wikipedia-lambda # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-2
+
+plugins:
+  - serverless-offline
+
+#package:
+exclude:
+  - .gitignore
+  - .git
+#  exclude:
+#    - exclude-me.js
+#    - exclude-me-dir/**
+
+functions:
+  page:
+    handler: handler.page
+    events:
+     - http:
+         path: page
+         method: get
+         cors: true
+  search:
+    handler: handler.search
+    events:
+     - http:
+         path: search
+         method: get
+         cors: true
+  whatlinkshere:
+    handler: handler.whatlinkshere
+    events:
+     - http:
+         path: whatlinkshere
+         method: get
+         cors: true
+  categorytree:
+    handler: handler.categorytree
+    events:
+     - http:
+         path: categorytree
+         method: get
+         cors: true

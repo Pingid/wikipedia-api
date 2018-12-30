@@ -1,0 +1,19 @@
+{
+  "name": "wikipedia-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-fetch": "^2.3.0",
+    "serverless-offline": "^3.31.3",
+    "x-ray": "^2.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
