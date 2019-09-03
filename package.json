@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "node-fetch": "^2.3.0",
     "serverless-offline": "^3.31.3",
     "x-ray": "^2.3.3"
